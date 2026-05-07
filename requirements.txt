@@ -1,0 +1,2 @@
+# No dependencies — pure Python standard library.
+# The platform's template Dockerfile installs this (empty) file fine.
