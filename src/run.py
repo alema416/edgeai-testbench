@@ -81,7 +81,7 @@ def collect_system_info():
 
     # Disk usage of /workspace
     try:
-        st = os.statvfs("/workspace")
+        st = os.statvfs("/")
         disk_total_gb = round(st.f_blocks * st.f_frsize / 1024**3, 2)
         disk_free_gb  = round(st.f_bavail * st.f_frsize / 1024**3, 2)
         disk_used_gb  = round(disk_total_gb - disk_free_gb, 2)
